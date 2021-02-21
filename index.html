@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title></title>
-    <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body>
-
+  <a id="kakao-link-btn">
+    <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png">
+  </a>
+  <script type="text/javascript">
+   Kakao.init('fd681f38ddd8580bf1f7c13df267eeb5');
+   Kakao.Link.createCustomButton({container: '#kakao-link-btn', templateId: 48025})
+   </script>
 </body>
 </html>
